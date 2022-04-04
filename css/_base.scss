@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    color: #24292e;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+
+#header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 20px;
+    padding: 0 4%;
+    & ul {
+        display: flex;
+        padding: 10px 0;
+    }
+    & li {
+        display: inline-block;
+        top: 0;
+        font-size: 0.8rem;
+        margin-left: 20px;
+        &:hover {
+            opacity: .7;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        & a {
+            color: rgb(36 41 46);
+        }
+        & img.icon {
+            width: 20px;
+        }
+    }
+}
+
+.site-title {
+    margin-top: 20px;
+    line-height: 1px;
+    & a {
+        display: block;
+    }
+}
+#mainvisual {
+    margin-bottom: 80px;
+    & img {
+        width: 100%;
+        max-width: 1920px;
+        height: 420px;
+        object-fit: cover;
+    }
+}
+.wrapper {
+    margin-bottom: 70px;
+    max-width: 960px;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+.sec-title {
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#about {
+    & ul {
+        margin-bottom: 30px;
+    }
+    & li {
+        list-style: none;
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+    & p {
+        text-align: justify;
+    }
+}
+#news {
+    & dl {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: solid 2px rgb(116 109 109);
+        border-bottom: solid 2px rgb(116 109 109);
+        margin-bottom: 20px;
+    }
+    & dt {
+        width: 100%;
+        border-bottom: none;
+        padding: 15px 15px 0 15px;
+    }
+    & dd {
+        width: 100%;
+        border-bottom: solid 1px #c8c8c8;
+        padding: 0 15px 15px 15px;
+    }
+}
+#contact {
+    & dl {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    & dt {
+        width: 100%;
+    }
+    & dd {
+        width: 100%;
+        margin-bottom: 10px;
+        & input,textarea  {
+            width: 100%;
+            border: solid 1px #c8c8c8;
+            padding: 10px;
+        }
+        & textarea {
+            height: 10rem;
+        }
+    }
+    & .button {
+        text-align: center;
+        & input {
+            width: 200px;
+            background-color: #24292e;
+            color: #fff;
+            padding: 15px 0;
+            border: solid 1px #24292e;
+        }
+    }
+}
+#footer {
+    background-color: #24292e;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 10px 20px;
+    text-align: center;
+}

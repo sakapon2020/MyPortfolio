@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------
+   RESET
+--------------------------------------------------------------*/
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #24292e;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+#header {
+  max-width: 100%;
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 20px;
+  padding: 0 4%;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  display: inline-block;
+  top: 0;
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+#header li:hover {
+  opacity: 0.7;
+}
+#header li:first-child {
+  margin-left: 0;
+}
+#header li a {
+  color: rgb(36, 41, 46);
+}
+#header li img.icon {
+  width: 20px;
+}
+
+.site-title {
+  margin-top: 20px;
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+}
+
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper {
+  margin-bottom: 70px;
+  max-width: 960px;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+
+.sec-title {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#about ul {
+  margin-bottom: 30px;
+}
+#about li {
+  list-style: none;
+}
+#about li:first-child {
+  margin-bottom: 30px;
+}
+#about p {
+  text-align: justify;
+}
+
+#news dl {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 2px rgb(116, 109, 109);
+  border-bottom: solid 2px rgb(116, 109, 109);
+  margin-bottom: 20px;
+}
+#news dt {
+  width: 100%;
+  border-bottom: none;
+  padding: 15px 15px 0 15px;
+}
+#news dd {
+  width: 100%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 0 15px 15px 15px;
+}
+
+#contact dl {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 100%;
+}
+#contact dd {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#contact dd input, #contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+@media (min-width: 601px) {
+  /******************************************************************
+
+  Stylesheet: 600px以上のタブレットやモニタで適用
+
+  ******************************************************************/
+  #header {
+    max-width: 960px;
+    height: 270px;
+    flex-direction: row;
+  }
+  #header li {
+    font-size: 0.9rem;
+    margin-left: 30px;
+  }
+
+  .wrapper {
+    margin: 0 auto 130px auto;
+  }
+
+  .site-title {
+    margin-top: 0;
+  }
+
+  .wrapper {
+    margin: 0 auto 130px auto;
+  }
+
+  #works ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  #works li {
+    width: 31%;
+    margin-bottom: 23px;
+  }
+
+  .sec-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+  }
+
+  #news dl {
+    flex-direction: row;
+  }
+  #news dt {
+    width: 20%;
+    border-bottom: solid 1px rgb(116, 109, 109);
+  }
+  #news dd {
+    width: 80%;
+    border-bottom: solid 1px rgb(116, 109, 109);
+    padding: 15px;
+  }
+
+  #contact dl {
+    flex-direction: row;
+  }
+  #contact dt {
+    width: 15%;
+  }
+  #contact dd {
+    width: 85%;
+  }
+  #contact dd input,
+#contact dd textarea {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
